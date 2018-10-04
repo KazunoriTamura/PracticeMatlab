@@ -1,9 +1,9 @@
-%% ŠJn
+%% é–‹å§‹
 close all
 clearvars
 tic
 
-%% ƒKƒEƒXŠÖ”iGaussian functionj
+%% ã‚¬ã‚¦ã‚¹é–¢æ•°ï¼ˆGaussian functionï¼‰
 x = -5:0.01:5;
 y_gaussian = exp(-x.^2);
 figure(1)
@@ -12,7 +12,7 @@ grid on
 grid minor
 title('Gaussian Function','FontSize',20)
 
-%% •W€³‹K•ª•ziNormal Distributionj
+%% æ¨™æº–æ­£è¦åˆ†å¸ƒï¼ˆNormal Distributionï¼‰
 x = -10:0.01:10;
 y_normpdf = normpdf(x,2,3);
 figure(2)
@@ -21,7 +21,7 @@ grid on
 grid minor
 title('Normal Distribution','FontSize',20)
 
-%% Œë·ŠÖ”erf
+%% èª¤å·®é–¢æ•°erf
 x = 0:0.1:100;
 y_erf = erf(x);
 
@@ -43,7 +43,7 @@ grid minor
 
 disp(y_erf_another);
 
-%% ‘Š•âŒë·ŠÖ”erfc
+%% ç›¸è£œèª¤å·®é–¢æ•°erfc
 x = -10:0.1:10;
 y_erf = erf(x);
 y_erfc = erfc(x);
@@ -56,7 +56,7 @@ ylim([-5,5]);
 grid on
 grid minor
 
-%% Chi“ñæ•ª•z
+%% ChiäºŒä¹—åˆ†å¸ƒ
 x = -10:0.1:500;
 y_chi_1 = chi2pdf(x,1);
 y_chi_2 = chi2pdf(x,2);
@@ -73,5 +73,5 @@ grid on
 grid minor
 title('Chi-Square Distribution','FontSize',20)
 
-%% I—¹
+%% çµ‚äº†
 toc
